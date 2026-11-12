@@ -10,7 +10,7 @@ const DIST = 'dist';
 
 // nombre de salida → [ruta en el sitio del hato, ancho máximo]
 const FOTOS = {
-  'portada-casa':      ['2018/06/hao-1.jpg', 2000],
+  'portada-casa':      ['2018/06/hao-1.jpg', 1680],
   'ordeno':            ['2018/06/hato_las_caretas-24.jpg', 1400],
   'ganado':            ['2018/07/hatolascaretas-1699.jpg', 900],
   'ordeno-corral':     ['2018/06/hato_las_caretas-4.jpg', 1000],
@@ -24,7 +24,7 @@ const FOTOS = {
   'habitacion-multiple': ['2018/06/hato_las_caretas-1.jpg', 900],
   'carne-en-vara':     ['2018/06/hato_las_caretas-23.jpg', 1000],
   'casabe':            ['2018/06/hato_las_caretas-14.jpg', 800],
-  'estero':            ['2018/07/hatolascaretas-1114.jpg', 2000],
+  'estero':            ['2018/07/hatolascaretas-1114.jpg', 1440],
   'caballos':          ['2014/08/SAM_0557.jpg', 800],
   'vacas':             ['2014/08/vacas.jpg', 800],
   'caballo-familia':   ['2018/06/hato_las_caretas-22.jpg', 800],
@@ -55,10 +55,10 @@ async function main() {
       const original = await descargar(ruta);
       const img = sharp(original).rotate();
       await img.clone().resize({ width: ancho, withoutEnlargement: true })
-        .webp({ quality: 78 }).toFile(`${DIST}/img/fotos/${nombre}.webp`);
+        .webp({ quality: ancho > 1200 ? 66 : 76 }).toFile(`${DIST}/img/fotos/${nombre}.webp`);
       if (nombre === 'portada-casa') {
         await img.clone().resize(1200, 630, { fit: 'cover' })
-          .jpeg({ quality: 82 }).toFile(`${DIST}/img/og.jpg`);
+          .jpeg({ quality: 74, mozjpeg: true }).toFile(`${DIST}/img/og.jpg`);
       }
       return nombre;
     })
