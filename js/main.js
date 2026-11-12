@@ -83,3 +83,9 @@ document.querySelectorAll('[data-form]').forEach((form) => {
 // Marca el enlace de la página actual en el menú.
 const slug = document.body.className.match(/page-([\w-]+)/)?.[1];
 document.querySelector(`[data-nav="${slug}"]`)?.setAttribute('aria-current', 'page');
+
+// Menú: transparente sobre la portada y con fondo al bajar.
+const nav = document.querySelector('.nav');
+const pintarNav = () => nav?.classList.toggle('nav--solid', window.scrollY > 40);
+pintarNav();
+window.addEventListener('scroll', pintarNav, { passive: true });
