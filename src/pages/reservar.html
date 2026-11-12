@@ -1,0 +1,66 @@
+<!-- title: Reservar · Hato Las Caretas -->
+<!-- description: Reserva tu estadía en el Hato Las Caretas: elige habitación (doble, cuádruple o múltiple), cantidad de personas y fechas. -->
+
+      <section class="page-hero page-hero--short">
+        <img class="page-hero__img" src="/img/fotos/portada-casa.webp" alt="" fetchpriority="high">
+        <div class="page-hero__content container">
+          <p class="eyebrow eyebrow--light">Vieja Casa Nueva</p>
+          <h1>Reservar</h1>
+        </div>
+      </section>
+
+      <section class="section section--cream">
+        <div class="container booking">
+          <div class="booking__info">
+            <h2>Solicita tu reserva</h2>
+            <p>Completa tus datos, la habitación y las fechas. Te confirmamos la disponibilidad y los detalles de tu estadía.</p>
+            <ul class="booking__list">
+              <li><span class="ico"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-bed"/></svg></span> Habitaciones doble, cuádruple y múltiple</li>
+              <li><span class="ico"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span> <a href="tel:+584127704669">+58 412 770 4669</a></li>
+              <li><span class="ico"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg></span> <a href="mailto:lascaretas@gmail.com">lascaretas@gmail.com</a></li>
+            </ul>
+            <img src="/img/fotos/hab-doble.webp" alt="Habitación del hato" loading="lazy">
+          </div>
+
+          <form class="form" id="form-reserva" data-form="reserva" novalidate>
+            <div class="form__row">
+              <label>Su nombre <small>(requerido)</small>
+                <input type="text" name="nombre" autocomplete="name" required>
+              </label>
+            </div>
+            <div class="form__row form__row--2">
+              <label>Su e-mail <small>(requerido)</small>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+              <label>Su número telefónico <small>(requerido)</small>
+                <input type="tel" name="telefono" autocomplete="tel" required>
+              </label>
+            </div>
+            <div class="form__row form__row--2">
+              <label>Habitación
+                <select name="habitacion">
+                  <option>Múltiple</option>
+                  <option>Cuádruple</option>
+                  <option>Doble</option>
+                </select>
+              </label>
+              <label>Cantidad de personas
+                <input type="number" name="personas" min="1" max="30" value="2">
+              </label>
+            </div>
+            <div class="form__row form__row--2">
+              <label>Desde
+                <input type="date" name="desde" required>
+              </label>
+              <label>Hasta
+                <input type="date" name="hasta" required>
+              </label>
+            </div>
+            <p class="form__error" role="alert" hidden></p>
+            <div class="form__actions">
+              <button type="submit" class="btn btn--solid" value="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg> Enviar por WhatsApp</button>
+              <button type="submit" class="btn btn--ghost-dark" value="email"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg> Enviar por correo</button>
+            </div>
+          </form>
+        </div>
+      </section>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="theme-color" content="#2b1a12">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="/img/og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Hato Las Caretas",
+    "description": "Hato llanero con hospedaje en casa colonial, gastronomía llanera y paseos por el Estero de Camaguán.",
+    "telephone": "+58 412 770 4669",
+    "email": "lascaretas@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carretera Nacional Calabozo–Camaguán, a 13 km de la Alcabala de Corozo Pando",
+      "addressLocality": "Camaguán",
+      "addressRegion": "Guárico",
+      "addressCountry": "VE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 8.218, "longitude": -67.898 },
+    "sameAs": ["https://www.instagram.com/hatolascaretas/", "https://www.facebook.com/lascaretas/"]
+  }
+  </script>
+</head>
+<body class="page-{{slug}}">
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <div class="promo">
+    <p><strong>Mención Tenedor de Oro 2025</strong> · Miembro del Circuito de la Excelencia · Distintivo Verde</p>
+  </div>
+
+  <div class="shell">
+    <header class="nav">
+      <div class="nav__inner container">
+        <a href="/" class="nav__brand" aria-label="Hato Las Caretas, inicio">
+          <img src="/img/logo.png" alt="Logo Hato Las Caretas" width="64" height="64">
+        </a>
+
+        <input type="checkbox" id="menu" class="nav__toggle" aria-hidden="true">
+        <label for="menu" class="nav__burger" aria-label="Abrir menú"><span></span></label>
+
+        <nav class="nav__links" aria-label="Principal">
+          <a href="/" data-nav="index">Inicio</a>
+          <a href="/el-hato" data-nav="el-hato">El Hato</a>
+          <a href="/habitaciones" data-nav="habitaciones">Habitaciones</a>
+          <a href="/paseos" data-nav="paseos">Paseos</a>
+          <a href="/gastronomia" data-nav="gastronomia">Gastronomía</a>
+          <a href="/prensa" data-nav="prensa">Prensa</a>
+          <a href="/contacto" data-nav="contacto">Contacto</a>
+          <a class="btn btn--light btn--sm" href="/reservar">Reservar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+{{content}}
+    </main>
+  </div>
+
+  <section class="band">
+    <div class="band__inner container">
+      <h2>Abre las talanqueras de tu próximo viaje</h2>
+      <p>Elige tu habitación y tus fechas. Te confirmamos la disponibilidad por WhatsApp o por correo.</p>
+      <a class="btn btn--primary" href="/reservar">Reservar estadía <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="/img/logo.png" alt="Hato Las Caretas" width="84" height="84" loading="lazy">
+        <div>
+          <p>Hato ganadero y hospedaje familiar en Camaguán, estado Guárico. Auténtico quehacer del Llano desde hace seis generaciones.</p>
+          <div class="social">
+            <span>Síguenos</span>
+            <a href="https://www.instagram.com/hatolascaretas/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+            <a href="https://www.facebook.com/lascaretas/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+            <a href="https://wa.me/584127704669" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <h3>Contacto</h3>
+        <a href="tel:+584127704669"><span class="ico"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span> +58 412 770 4669</a>
+        <a href="mailto:lascaretas@gmail.com"><span class="ico"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg></span> lascaretas@gmail.com</a>
+        <p><span class="ico"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg></span> Carretera Calabozo–Camaguán, a 13 km de la Alcabala de Corozo Pando, Guárico</p>
+      </div>
+      <nav class="footer__links" aria-label="Enlaces rápidos">
+        <h3>Enlaces</h3>
+        <a href="/">Inicio</a>
+        <a href="/el-hato">El Hato</a>
+        <a href="/habitaciones">Habitaciones</a>
+        <a href="/paseos">Paseos</a>
+        <a href="/gastronomia">Gastronomía</a>
+        <a href="/prensa">Prensa</a>
+        <a href="/reservar">Reservar</a>
+      </nav>
+      <div class="footer__map">
+        <iframe title="Mapa del Hato Las Caretas" src="https://maps.google.com/maps?q=8.218,-67.898&z=10&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Hato Las Caretas. Todos los derechos reservados. · Somos parte del <a href="http://circuitodelaexcelencia.com/" target="_blank" rel="noopener">Circuito de la Excelencia</a></p>
+      <p>Diseño y desarrollo: <a href="https://tuplandigital.cl" target="_blank" rel="noopener">Tu Plan Digital</a></p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/584127704669?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Hato%20Las%20Caretas" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>
+  </a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.3 3.3 0 0 0-1 2.5 5.8 5.8 0 0 0 1.2 3 13 13 0 0 0 5.1 4.5c.7.3 1.3.5 1.7.6a4 4 0 0 0 1.9.1 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .1-1.4c0-.1-.2-.2-.5-.3zM12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.9L.1 24l6.3-1.6A11.8 11.8 0 0 0 23.8 12a11.7 11.7 0 0 0-3.4-8.4z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm18 2-10 7L2 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm9 9.4A4 4 0 1 1 12.6 8a4 4 0 0 1 3.4 3.4zM17.5 6.5h0"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8V6c0-.9.6-1 1-1h3V1h-4c-3.3 0-4 2.4-4 4v3H7v4h3v11h4V12h3.5l.5-4z"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1 19.1 4.9"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 2.7 6.3 8.4a8 8 0 1 0 11.4 0z"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 8.8a15 15 0 0 1 20 0M12 20h0"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 7c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm13 10v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 17H3v-5l2-5h14l2 5v5h-2M5 17a2 2 0 1 0 4 0 2 2 0 1 0-4 0m10 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0M9 17h6M3 12h18"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></symbol>
+  </svg>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
