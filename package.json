@@ -1,0 +1,12 @@
+{
+  "name": "hato-las-caretas-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "npm run build && python3 -m http.server 8080 -d dist"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}
