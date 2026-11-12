@@ -25,7 +25,7 @@ const FOTOS = {
   'carne-en-vara':     ['2018/06/hato_las_caretas-23.jpg', 1000],
   'casabe':            ['2018/06/hato_las_caretas-14.jpg', 800],
   'estero':            ['2018/07/hatolascaretas-1114.jpg', 2000],
-  'caballos':          ['2018/06/SAM_0557.jpg', 800],
+  'caballos':          ['2014/08/SAM_0557.jpg', 800],
   'vacas':             ['2014/08/vacas.jpg', 800],
   'caballo-familia':   ['2018/06/hato_las_caretas-22.jpg', 800],
 };
